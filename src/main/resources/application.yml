@@ -1,0 +1,9 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Java2LocalDB
+    username: postgres
+    password: recep123123
