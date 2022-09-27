@@ -1,6 +1,7 @@
 package com.recepkabakci.MonolithicCode.controller;
 
 import com.recepkabakci.MonolithicCode.dto.request.FindByIdRequestDto;
+import com.recepkabakci.MonolithicCode.dto.response.GetAllSaleResponseDto;
 import com.recepkabakci.MonolithicCode.repository.entity.Sale;
 import com.recepkabakci.MonolithicCode.services.SaleService;
 import com.recepkabakci.MonolithicCode.utility.Datas;
@@ -25,8 +26,8 @@ public class SaleController {
         return ResponseEntity.ok("Sale Succesfull");
     }
     @GetMapping("/getall")
-    public ResponseEntity<List<Sale>> findAll(){
-        return ResponseEntity.ok(saleService.findAll());
+    public ResponseEntity<List<GetAllSaleResponseDto>> findAll(){
+        return ResponseEntity.ok(saleService.findAllDto());
 
 }
     @PostMapping("/findbyid")
@@ -37,5 +38,6 @@ public class SaleController {
         }
         return ResponseEntity.ok(new Sale());
     }
+
 
 }

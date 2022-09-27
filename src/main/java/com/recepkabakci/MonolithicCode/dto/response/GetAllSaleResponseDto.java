@@ -18,5 +18,7 @@ public class GetAllSaleResponseDto {
     private Double price;
     private Double totalAmount;
     private LocalDate createdDate;
+    private String productName;
+    private String customerName;
 
 }
