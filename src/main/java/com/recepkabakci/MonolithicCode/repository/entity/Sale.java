@@ -7,13 +7,13 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Table(name = "tblsell")
+@Table(name = "tblsale")
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Sell {
+public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Long id;
